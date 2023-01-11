@@ -18,15 +18,12 @@
 const categoriesEl = document.getElementsByClassName('item');
 console.log (`Number of categories:`, categoriesEl.length);
 
-const category = [...categoriesEl].map(item => item.firstElementChild.textContent);
-const elementsCategory = [...categoriesEl].map(item => item.lastElementChild.children.length);
+const category = [...categoriesEl]
+category.forEach(item => 
+    console.log (
+    `Category:${item.firstElementChild.textContent}
+    Elements:${item.lastElementChild.children.length}`)
+);
 
-
-console.log (`Category:`, category [0]);
-console.log (`Elements:`, elementsCategory[0] );
-console.log (`Category:`, category [1]);
-console.log (`Elements:`, elementsCategory[1])
-console.log (`Category:`, category [2]);
-console.log (`Elements:`, elementsCategory[2]);
 
 
