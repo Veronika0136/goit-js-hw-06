@@ -12,8 +12,11 @@ function onSubmit(evt){
     } else {
         const formResult ={email,password,}
         console.log (formResult);
-        const btn = evt.currentTarget.elements[2];
-        btn.setAttribute('type', 'reset');
+
+        evt.target.reset();
+
+        // const btn = evt.currentTarget.elements[2];
+        // btn.setAttribute('type', 'reset');
 
 
 
